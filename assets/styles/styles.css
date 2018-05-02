@@ -16,14 +16,14 @@ body {
   margin: 0;
 }
 
-a:link {
+a {
   color: #333333;
   text-decoration: none;
   border-bottom: 1px solid;
 }
 
 a:hover {
-  color: #CDC3B4;
+  color: #cdc3b4;
 }
 
 a:visited {
@@ -54,23 +54,19 @@ a:visited {
   color: #9F4F2C;
 }
 
-.work-button {
+.top-nav-link {
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.work-button {
   margin-right: 30px;
-  color: #9F4F2C;
 }
 
 .about-button {
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration-color: none;
   margin-right: 70px;
-  color: #9F4F2C;
 }
 
 .page-title {
@@ -146,7 +142,7 @@ ul {
 .about {
   display: flex;
   align-items: flex-start;
-  margin: auto;
+  justify-content: center;
 }
 
 .bio-text {
@@ -173,11 +169,18 @@ ul {
   padding-bottom: 50px;
 }
 
-form {
-  display: block;
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.form {
   margin-top: 0;
   box-sizing: border-box;
-
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .form-label {
@@ -213,10 +216,11 @@ form {
   background-color: #FAFAFA;
   border: none;
   padding-top: 1rem;
-  padding-right: 2rem;
   padding-bottom: 1rem;
-  padding-left: 2rem;
   color: #333333;
+  display: block;
+  align-self: flex-end;
+  cursor: pointer;
 }
 
 h3 {
@@ -239,23 +243,35 @@ h4 {
 .project-content {
   display: flex;
   align-items: flex-start;
-  margin-right: 64px;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 0 64px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1200px) {
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .project-text {
   order: 1;
-  margin-right: 64px;
-  margin-bottom: 80px;
-  margin-left: 64px;
-  flex-basis: 1100px;
+  max-width: 1100px;
 }
 
 .project-image {
   order: 0;
   margin-right: 64px;
-  margin-left: 64px;
   position: relative;
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 1200px) {
+  .project-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
 }
