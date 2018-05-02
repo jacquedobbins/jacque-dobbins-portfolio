@@ -139,18 +139,33 @@ ul {
   justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .bio-text {
   order: 1;
-  padding-left: 78px;
-  margin-right: 200px;
+  max-width: 550px;
+}
+
+.headshot-wrap {
+  margin-right: 64px;
 }
 
 .headshot {
-  order: 0;
-  position: relative;
   max-width: 100%;
   height: auto;
-  margin-left: 200px;
+}
+
+@media (max-width: 1200px) {
+  .headshot {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer {
