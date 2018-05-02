@@ -26,12 +26,6 @@ a:hover {
   color: #cdc3b4;
 }
 
-a:visited {
-  color: #333333;
-  text-decoration: none;
-  border-bottom: 1px solid;
-}
-
 .header {
   background-color: #FFFFFF;
   margin: 0;
@@ -260,10 +254,11 @@ h4 {
   max-width: 1100px;
 }
 
-.project-image {
-  order: 0;
+.project-image-wrap {
   margin-right: 64px;
-  position: relative;
+}
+
+.project-image {
   max-width: 100%;
   height: auto;
 }
