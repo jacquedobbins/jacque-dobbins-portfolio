@@ -75,8 +75,15 @@ a:hover {
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase; 
-  margin-bottom: 150px;
   margin-top: 150px; 
+}
+
+.project-tag {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 150px;
 }
 
 .tag-line {
@@ -96,6 +103,14 @@ p {
   margin-top: 0;
 }
 
+ul {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+}
+
 .sub-head {
   font-weight: 300;
   font-size: 20px;
@@ -104,10 +119,6 @@ p {
   text-transform: capitalize;
   margin-top: 122px;
   margin-bottom: 122px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .projects {
@@ -139,6 +150,7 @@ ul {
   text-transform: uppercase;
   padding-bottom: 35px;
   text-align: center;
+  list-style-type: none;
 }
 
 .about {
@@ -199,91 +211,33 @@ ul {
   padding-bottom: 50px;
 }
 
-.contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; 
-}
-
-.form {
-  margin-top: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 300px;
-}
-
-.form-label {
-  color: #333333;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.08em;
-  display: block;
-}
-
-.form-input {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #333333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #FAFAFA;
-}
-
-.form-textarea {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #333333;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #FAFAFA;
-}
-
-.form-send {
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  background-color: #FAFAFA;
-  border: none;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: #333333;
-  display: block;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  cursor: pointer;
-}
-
 h3 {
   font-weight: 300;
   line-height: normal;
   font-size: 20px;
   letter-spacing: 0.08em;
-  text-transform: lowercase;
   margin-top: 0;
 }
 
 h4 {
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
   font-size: 17px;
   letter-spacing: 0.08em;
-  text-transform: lowercase;
+}
+
+h5 {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+}
+
+h6 {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.08em;
 }
 
 .project-content {
