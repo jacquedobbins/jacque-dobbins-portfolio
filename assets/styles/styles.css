@@ -44,6 +44,18 @@ a:hover {
   margin-bottom: 128px;
 }
 
+.screen-reader-only {
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  border: 0;
+}
+
 .title {
   font-weight: 600;
   font-size: 18px;
@@ -52,6 +64,7 @@ a:hover {
   text-align-last: left;
   margin-left: 70px;
   color: #9F4F2C;
+  border-bottom: 0px solid;
 }
 
 .top-nav-link {
